@@ -1,22 +1,18 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
-        <title>Bus</title>
+        <head>
+        <title>Rutas</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script> 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/stilos.css">
-
         <script type="text/javascript" src="js/bus.js"></script>
     </head>
-    <body oncontextmenu="return false" onkeydown="return false">
+    </head>
+    <body oncontextmenu="return false" onkeydown="return false" onload="initMap();">
         <br>
         <div class="container-fluid">            
             <nav class="navbar navbar-inverse">
@@ -34,8 +30,8 @@ and open the template in the editor.
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav nav">
-                            <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
-                            <li><a href="rutas.html">Ver todas las rutas</a></li>
+                            <li ><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+                            <li class="active"><a href="rutas.html">Ver todas las rutas</a></li>
                             <li><a href="#">Ver los Horarios</a></li>
                         </ul>
                         <form class="navbar-form navbar-right">
@@ -48,36 +44,12 @@ and open the template in the editor.
                 </div><!-- /.container-fluid -->
             </nav>
         </div>    
-        <!--pagina-->
-        <div id="pagina">
-            <div class="container">
-                <div class="page-header">
-                    <div class="jumbotron">
-                        <h2> Logotipo mas información</h2>
-                        <p>...</p>
-                    </div>
-                </div>
-                <div class="container">
-                    <form  name="formulario" id="formulario" action="" method="post">
-                        <div class="input-group input-group-btn">                    
-                            <input type="text" class="form-control"  placeholder="Ingrese una dirección para buscar la parada mas cercana" aria-describedby="sizing-addon1"id="valor">
-                        </div><br>
-                        <div class="alert alert-warning" role="alert" id="alertaLugar">Ingrese la Direccion es obligatoria</div>
-                        <div class="btn btn-group" id="botones">
-                            <a class="btn btn-primary"  name="submit" id="submit" type="submit" id="lugarLocalizacion"  onclick="validar();initMap();">Localizar</a>
-
-                            <a class="btn btn-primary" id="limpiar" onclick="limpiar();" >Limpiar</a>
-                        </div>                         
-                    </form>
-                </div>
-            </div>
-        </div>
+        <!--pagina-->       
         <!--Pagina con el mapa de las ubicaciones de las paradas-->
-        <div id="pagina1" class="container">
+        <div id="pagina3" class="container">
             <div id="map">
-
+                <p>sadasdsa</p>
             </div>  
-
         </div>
         <!--fin de la pagina-->
         <br>
@@ -92,4 +64,3 @@ and open the template in the editor.
         </div>
     </body>
 </html>
-
