@@ -7,6 +7,14 @@
 body{
 
 }
+.btn{
+    border-radius: 0px;
+   
+}
+#limpiar{
+    width: 82px;
+    margin-left: 2px;
+}
 .panel-footer{
     background-color: black;
     color: white;
