@@ -1,0 +1,38 @@
+.navbar-default{
+    -webkit-box-shadow: -2px 8px 7px -7px rgba(120,120,120,1);
+    -moz-box-shadow: -2px 8px 7px -7px rgba(120,120,120,1);
+    box-shadow: -2px 8px 7px -7px rgba(120,120,120,1);
+}
+
+body{
+
+}
+.panel-footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#botones{
+    margin-left: 35%;
+}
+#map {
+    border-color: #000;
+    position: fixed;
+    height: 70%;
+    height: 400px;
+    background-color: red;
+}
+.alert-warning{
+    background-color: #FFCBBF     ;
+    color: #5C5C5C  ;
+    display: none;
+}
+#pagina1{
+    display: none;
+}
+#footer{
+    margin-top:35px;
+    width:100%;
+    height:auto;
+    
+}
