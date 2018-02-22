@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>BusLineMap</title>
@@ -15,7 +10,6 @@ and open the template in the editor.
         <link rel="stylesheet" href="css/stilos.css">
         <script type="text/javascript" src="js/mapbox-gl.js"></script>
         <link href="css/mapbox-gl.css" rel="stylesheet" />
-
         <script type="text/javascript" src="js/bus.js"></script>
     </head>
     <body oncontextmenu="return false" onkeydown="return true">
