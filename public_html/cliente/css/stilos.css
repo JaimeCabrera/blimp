@@ -1,46 +1,53 @@
-.navbar-default{
+.navbar-inverse{
     -webkit-box-shadow: -2px 8px 7px -7px rgba(120,120,120,1);
     -moz-box-shadow: -2px 8px 7px -7px rgba(120,120,120,1);
     box-shadow: -2px 8px 7px -7px rgba(120,120,120,1);
+
 }
 
 body{
-
+    background-color: #FEFEFE        ;
 }
 .btn{
     border-radius: 0px;
-   
+
 }
+
 #limpiar{
     width: 82px;
     margin-left: 2px;
 }
-.panel-footer{
-    background-color: black;
-    color: white;
-    text-align: center;
-}
+
 #botones{
     margin-left: 35%;
 }
-#map {
-   
-    position: fixed;
-    height: 70%;
-    height: 400px;
-   
-}
-.alert-warning{
+
+.alert-danger{
     background-color: #FFCBBF     ;
     color: #5C5C5C  ;
     display: none;
 }
 #pagina1{
     display: none;
+
+
 }
+
 #footer{
+
     margin-top:35px;
     width:100%;
     height:auto;
-    
+    color: black;
+    text-align: center;
+}
+#map {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+#map1 {
+    position: relative;
+    width: 100%;
+    height: 400px;
 }
