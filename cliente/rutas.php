@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        
+
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/stilos.css">
         <script type="text/javascript" src="js/bus.js"></script>
@@ -261,7 +261,7 @@
                         "line-cap": "round"
                     },
                     "paint": {
-                        "line-color": "rgb(2, 4, 212)",
+                        "line-color": "rgb(255, 0, 0)",
                         "line-width": 3
                     }
                 });
