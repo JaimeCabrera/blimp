@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/stilos.css">
         <script type="text/javascript" src="js/mapbox-gl.js"></script>
@@ -14,7 +14,7 @@
     </head>
     <body oncontextmenu="return false" onkeydown="return true">
         <br>
-        <div class="container-fluid">            
+        <div class="container-fluid">
             <nav class="navbar navbar-inverse">
                 <div class="container-fluid">
                     <!-- Brand and toggle get grouped for better mobile display -->
@@ -39,23 +39,23 @@
                                 <input type="text" class="form-control" placeholder="Search">
                             </div>
                             <button type="submit" class="btn btn-default">Buscar</button>
-                        </form>                       
+                        </form>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav>
-        </div>    
+        </div>
         <!--pagina-->
         <div id="pagina">
             <div class="container">
                 <div class="page-header">
                     <div class="jumbotron">
-                        <h2> Logotipo mas información</h2>
+                        <h2> Logotipo more information</h2>
                         <p>...</p>
                     </div>
                 </div>
                 <div class="container">
                     <form  name="formulario" id="formulario" action="" method="post">
-                        <div class="input-group input-group-btn">                    
+                        <div class="input-group input-group-btn">
                             <input type="text" class="form-control"  placeholder="Ingrese una dirección para buscar la parada mas cercana" aria-describedby="sizing-addon1"id="valor">
                         </div><br>
                         <div class="alert alert-danger" role="alert" id="alertaLugar"> <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
@@ -64,7 +64,7 @@
                             <a class="btn btn-primary"  name="submit" id="submit" type="submit" id="lugarLocalizacion"  onclick="validar();">Localizar</a>
 
                             <a class="btn btn-danger" id="limpiar" onclick="limpiar();" >Limpiar</a>
-                        </div>                         
+                        </div>
                     </form>
                 </div>
             </div>
@@ -72,11 +72,11 @@
         <!--Pagina con el mapa de las ubicaciones de las paradas-->
 
         <div id="pagina1" class="container">
-            <div id="map1" class="col-md-6"></div> 
+            <div id="map1" class="col-md-6"></div>
             <style>
             /*body { margin:-1%; padding:30%; }*/
             #map1 { position:relative;; top:auto; bottom:auto; width:100%; }
-            
+
         </style>
 
            <script>
@@ -255,4 +255,3 @@
         </div>
     </body>
 </html>
-
