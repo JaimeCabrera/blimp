@@ -49,14 +49,8 @@
         <div id="pagina">
             <div class="container">
                 <div class="page-header">
-<<<<<<< HEAD
-                    <div class="jumbotron" >
-                        
-                        <h2> Guido Puto</h2>
-=======
                     <div class="jumbotron">
-                        <h2> Logotipo y mas Informacion dev</h2>
->>>>>>> c3d289d2ad15cc5efe1d033e1bd2e3c92d66a32a
+                        <h2> Logotipo y mas Informacion </h2>
                         <p>...</p>
                     </div>
                 </div>
