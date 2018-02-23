@@ -12,6 +12,7 @@
         <link href="css/mapbox-gl.css" rel="stylesheet" />
         <script type="text/javascript" src="js/bus.js"></script>
     </head>
+    
     <body oncontextmenu="return false" onkeydown="return true">
         <br>
         <div class="container-fluid">            
@@ -48,8 +49,9 @@
         <div id="pagina">
             <div class="container">
                 <div class="page-header">
-                    <div class="jumbotron">
-                        <h2> Logotipo mas información</h2>
+                    <div class="jumbotron" >
+                        
+                        <h2> Guido Puto</h2>
                         <p>...</p>
                     </div>
                 </div>

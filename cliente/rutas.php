@@ -22,6 +22,7 @@
     </head>
     <body >
         <br>
+        
         <div class="container-fluid">
             <nav class="navbar navbar-inverse">
                 <div class="container-fluid">
@@ -54,14 +55,9 @@
         </div>
         <!--pagina-->
         <!--Pagina con el mapa de las ubicaciones de las paradas-->
-
-
         <div id="pagina3" class="container">
-
             <div id="Lista" >
                 <h4 style="color:#080808">Rutas Alimentadoras</h4>
-
-
                 <?php
                 include "php/conexion.php";
                 echo"  <div class='panel-group' id='accordion'>";
@@ -86,20 +82,6 @@
                 }
                 echo" </div>";
                 ?>
-                <!--
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                                Línea 4</a>
-                        </h4>
-                    </div>
-                    <div id="collapse3" class="panel-collapse collapse">
-                        <div class="panel-body">Informacion: Pasa por Esteban Godoy, Julio Ordoñes, El VAlle, Epoca</div>
-                    </div>
-                </div>
-            </div>-->
-
             </div>
             <h4>Rutas de los Buses Urbanos de la Ciudad de Loja</h4>
             <div class="panel panel-default">
@@ -111,8 +93,6 @@
             <!--fin de la pagina-->
             <br>
             <!--Pie de la PAgina-->
-
-
             <script>
                 mapboxgl.accessToken = 'pk.eyJ1IjoiZ3Fyb290IiwiYSI6ImNqZGx6OGh1cjBmcjMzMm85MGw0Y3hkaXkifQ.aUDBTOBjCfRtDhKGWfGNcQ';
                 var map = new mapboxgl.Map({
