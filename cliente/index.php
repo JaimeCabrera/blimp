@@ -56,7 +56,7 @@
                 <div class="container">
                     <form  name="formulario" id="formulario" action="" method="post">
                         <div class="input-group input-group-btn">
-                            <input type="text" class="form-control"  placeholder="Ingrese una dirección para buscar la parada mas cercana" aria-describedby="sizing-addon1"id="valor">
+                            <input type="text" class="form-control"  value="Ingrese una dirección para buscar la parada mas cercana" aria-describedby="sizing-addon1"id="valor">
                         </div><br>
                         <div class="alert alert-danger" role="alert" id="alertaLugar"> <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
                             <span class="sr-only">Error:</span>Ingrese la Direccion es obligatoria</div>
