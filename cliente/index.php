@@ -50,7 +50,7 @@
             <div class="container">
                 <div class="page-header">
                     <div class="jumbotron">
-                        <h2> Logotipo y mas Informacion qw</h2>
+                        <h2> Logotipo y mas Informacion de la aplicacion</h2>
                         <p>...</p>
                     </div>
                 </div>
