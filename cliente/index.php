@@ -12,6 +12,7 @@
         <link href="css/mapbox-gl.css" rel="stylesheet" />
         <script type="text/javascript" src="js/bus.js"></script>
     </head>
+
     <body oncontextmenu="return false" onkeydown="return true">
         <br>
         <div class="container-fluid">
