@@ -12,7 +12,7 @@
         <link href="css/mapbox-gl.css" rel="stylesheet" />
         <script type="text/javascript" src="js/bus.js"></script>
     </head>
-    
+
     <body oncontextmenu="return false" onkeydown="return true">
         <br>
         <div class="container-fluid">
@@ -50,7 +50,7 @@
             <div class="container">
                 <div class="page-header">
                     <div class="jumbotron">
-                        <h2> Logotipo y mas Informacion </h2>
+                        <h2> Logotipo y mas Informacion dev</h2>
                         <p>...</p>
                     </div>
                 </div>
