@@ -8,6 +8,7 @@
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/stilos.css">
+        
         <script type="text/javascript" src="js/mapbox-gl.js"></script>
         <link href="css/mapbox-gl.css" rel="stylesheet" />
         <script type="text/javascript" src="js/bus.js"></script>
@@ -26,7 +27,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html">BusLineMap</a>
+                        <a class="navbar-brand" href="index.php">BusLineMap</a>
                     </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
