@@ -6,9 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/stilos.css">
+        <link rel="stylesheet" href="css/stilos.css"
         <script type="text/javascript" src="js/bus.js"></script>
         <script src="js/mapbox-gl.js"></script>
         <link href="css/mapbox-gl.css" rel='stylesheet' />
