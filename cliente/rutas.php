@@ -7,12 +7,8 @@
         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="css/bootstrap.min.css">
-<<<<<<< HEAD
         <link rel="stylesheet" href="css/stilos.css">
-        
-=======
         <link rel="stylesheet" href="css/stilos.css"
->>>>>>> a8eafc6039d38b6aadba738b6d3d55c2a90c89f8
         <script type="text/javascript" src="js/bus.js"></script>
         <script src="js/mapbox-gl.js"></script>
         <link href="css/mapbox-gl.css" rel='stylesheet' />
