@@ -35,11 +35,13 @@ body{
 
 #footer{
 
-    margin-top:35px;
-    width:100%;
-    height:auto;
-    color: black;
-    text-align: center;
+    background-color: black;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 140px;
+  color: white;
+  text-align: center;
 }
 #map {
     position: relative;
