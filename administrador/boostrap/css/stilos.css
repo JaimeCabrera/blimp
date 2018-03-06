@@ -1,33 +1,163 @@
 body {
-  margin: 0;
-  margin-bottom: 40px;
-  background-color: #FAFAFA;
-}
-#footer {
-  
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 80px;
-  text-align: center;
-  
-}
-.navbar-default{
-	background-color: #3A648A;
-	color:white;
-	outline-offset: red;
-}
-#containerLogin{
-	margin-left: 10%;
+    background-color: #eaeded ;
+    margin: 0 auto 0px;
+    border-radius: 1px;
+    background: #ebedef ;
+    color: #5d6d7e;
+    font-size: 13.5;
+
 }
 
+
+.seccionRecargar1{    
+    display: none;    
+    background-color: #bfc9ca    ;
+    width: 70%;
+    margin-left: 22em;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    margin-top: 5%;
+    outline: 1px solid rgba(112, 123, 124,.3);
+    padding: 30px 0 10px; 
+}
+
+.navbar-default{
+    height: 60px;
+    padding-top: .8em;
+    border-color:  #85929e ;
+    background-color:  #305f80 ;
+    color:#d8d8d8;
+    -webkit-box-shadow: -3px 11px 3px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 11px 3px -9px rgba(0,0,0,0.75);
+    box-shadow: -1px 11px 3px -9px rgba(0,0,0,0.75);
+}
+#registroEliminado{
+    display: none;
+}
 .navbar-inverse{
-  background-color: #3A648A;
-  border-color: white;
+    position: relative;
+    background-color:    #305f80   ;
+    border-color:  #2471a3;
+    border-radius: 1px;
+    z-index: 29;
+    -webkit-box-shadow: -1px 2px 3px -1px rgba(12,14,18,1);
+    -moz-box-shadow: -1px 2px 3px -1px rgba(12,14,18,1);
+    box-shadow: -1px 2px 3px -1px rgba(12,14,18,1);
 }
-.li.active{
-  background-color: red;
+.panel-success{
+   background-color:  #f8f9f9;
+    border-color:  #bfc9ca  ;
+    border-radius: 0px;
 }
-#navs1{
-  border-radius: 1px;
+
+.headingParadas{
+    font-size: 23; 
+    
+;
 }
+/*color del headin de la tabla*/
+.tablaParadas{
+    color:  #839192 ;
+    background-color:    #e5e7e9 
+; 
+}
+/* colores del contenido de la tabla*/
+.table-bordered{
+   background-color:   #eaeded  ;
+   font-size: 13px;
+}
+
+.login{
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 100%;
+}
+
+.menu{
+    position: absolute;
+    display: inline-block;   
+    list-style: none;
+    line-height: 45px;    
+    padding-left: 1px;
+    padding-top: 3.1em;
+    margin: -19px auto ;
+    width: 17.4em;
+    margin-left: 1px;
+    height: 86%;
+    background-color: #427394    ;
+    z-index: 30;
+    /*outline: 1px solid ;*/
+    -webkit-box-shadow: 3px 2px 3px -2px rgba(34,46,84,1);
+    -moz-box-shadow: 3px 2px 3px -2px rgba(34,46,84,1);
+    box-shadow: 3px 2px 3px -2px rgba(34,46,84,1);
+}
+.menu a {
+    display: block;
+    color: #f4f6f7;
+    text-decoration:none;
+    text-transform: uppercase;
+    --webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    width: 100%;
+}
+.menu a:hover{
+    padding-left: 4em;
+    color: #2e4053;
+}
+.menu li{
+    /*border-left: 5px solid rgba(255,255,255,.2); inset es para que sombra crezca haci adentro*/ 
+    box-shadow: 5px 0 rgba(255,255,255,.8)inset;    
+    /*outline: 1px solid red;*/
+    margin-bottom: 5px;
+
+    padding-left: 2em;
+    /* esto es para darle el efectoal menu*/
+    --webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.menu li:hover{
+    box-shadow: 17em 0 rgba(255,255,255,.7)inset;
+}
+.glyphicon-trash{
+    color:#2345;
+
+}
+.glyphicon-trash:hover{
+ color:red;
+}
+.glyphicon-edit{
+    color:green;
+
+}
+.glyphicon-edit:hover{
+    color: #d12;
+    box-sizing: 23px;
+}
+.glyphicon-bed{
+    color:;
+}
+
+.seccionRecargar{
+    position: relative;
+    background-color: #F2F2F2;
+    width: 72%;
+    margin-left: 22em;
+    border-left: 2px solid #abb2b9;    
+}
+.editarParada{
+    position: relative;
+    background-color: #F2F2F2;
+    width: 72%;
+    margin-left: 22em;
+    border-left: 2px solid #abb2b9;    
+}
+.panel-body{
+
+ /*border-top: 1px solid   #abb2b9 */  
+}
+
