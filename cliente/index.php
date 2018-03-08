@@ -65,7 +65,7 @@
                 <div class="col-lg-12">
                     <img class="img-responsive" src="assets/logo.svg" alt="">
                     <div class="intro-text">
-                        <span class="skills">lema chido vendedor </span>
+                        <span class="skills">guiandote a tu destino...</span>
                     </div>
                 </div>
             </div>
@@ -101,14 +101,12 @@
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
                   <h4 class="text-center">Misión</h4>
-                    <p style="text-align:justify">
-Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
-                    </p>
+                    <p style="text-align:justify">Brindar a la ciudadanía en general información segura y real para la localización de su destino utilizando las lineas de bus alimentadores de la ciudad de Loja.      </p>
+</p>
                 </div>
                 <div class="col-lg-4">
                       <h4 class="text-center">Visión</h4>
-                    <p style="text-align:justify">ra que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
-</p>
+                    <p style="text-align:justify">Convertirse en el medio mas reccurente de informacion de vias de transporte publico para la ciudadania del sur del Ecuador.</p>
                 </div>
             </div>
         </div>
