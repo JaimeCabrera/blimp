@@ -1,3 +1,7 @@
+<?php
+include "php/paradas.php";
+include "php/rutasInformacion.php";
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -29,6 +33,7 @@
           padding-left: 2%;
           width: 78%;}
     </style>
+
 </head>
 <body id="page-top" class="index">
       <!-- Navigation -->
@@ -66,6 +71,8 @@
           <!-- /.container-fluid -->
       </nav>
       <!-- Rutas Section -->
+
+
       <section id="rutas">
           <div class="container">
               <div class="row">
@@ -80,49 +87,27 @@
                 </div>
                   <div class="col-md-4">
                     <div id="Lista">
-                        <h3 id="verga" style="color:#337ab7;" >RUTAS</h3>
+                        <h3 style="color:#337ab7;" >RUTAS</h3>
                         <div class="panel-group" id="accordion">
                             <div class="panel panel-default">
+                              <?for ($i=0; $i < $aum; $i++) { ?>
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"  id="L-1" onclick="activarRuta(this.id)">
-                                            Linea 1</a>
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse<?echo $i?>"  id="<?echo $id[$i];?>" onclick="activarRuta(this.id)">
+                                            <?echo $nombreLineaBus[$i]."  (". $nombreRuta[$i].")"?></a>
                                     </h4>
                                 </div>
-                                <div id="collapse1" class="panel-collapse collapse in">
-                                    <div class="panel-body">Esta pasa por su casa.</div>
+                                <div id="collapse<?echo $i?>" class="panel-collapse collapse collapse">
+                                    <div class="panel-body"><b>Inicia:</b><?echo " ".$inicioRuta[$i]." "?> </br> <b>Recorrido:</b><?echo " ".$recorrido[$i]." "?> </br><b>Termina: </b><?echo" ".$finRuta[$i]." "?></div>
                                 </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" id="L-3" onclick="activarRuta(this.id)">
-                                            Línea 3</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse2" class="panel-collapse collapse">
-                                    <div class="panel-body">Tome esta linea ahora y va directo al chongo.</div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" id="L4">
-                                            Línea 4</a>
-                                    </h4>
-                                </div>
-                                <div id="collapse3" class="panel-collapse collapse">
-                                    <div class="panel-body">Informacion: Pasa por Esteban Godoy, Julio Ordoñes, El VAlle, Epoca</div>
-                                </div>
+                                <?}?>
+                              </div>
                             </div>
                         </div>
-                    </div>
-                  </div>
-              </div>
-          </div>
-      </section>
-
-      <?php include "php/paradas.php";?>
+                   </div>
+               </div>
+            </div>
+        </section>
 
       <script>
         var i=0;
