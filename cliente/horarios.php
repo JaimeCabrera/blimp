@@ -12,7 +12,7 @@
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
+    <link rel="icon" type="image/png" src="assets/blimpfavicon.png">
   </head>
   <body id="page-top" class="index">
       <!-- Navigation -->
@@ -50,11 +50,16 @@
           <!-- /.container-fluid -->
       </nav>
         <!-- Horairios Section -->
-      <section class="success" id="horarios">
+      <section id="horarios">
           <div class="container">
               <div class="row">
                   <div class="col-lg-12 text-center">
-                    <h4 style="color:#127f12;"><p class="text-center">Lista de horarios de los BUSES de transporte urbano de Loja</p> </h4>
+                      <h2>Horarios de los Buses Urbanos</h2>
+                      <hr class="star-primary">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-12 text-center">
                     <div class="panel panel-default">
                         <div class="panel-body">
                            <?php
@@ -98,7 +103,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; blimp 2016. Powered by: <a href="http://desarrollotroll.com/" style="color:white; font-weight:bold; text-decoration:underline">desarrollotroll</a>
+                        Copyright &copy; blimp 2018. Powered by: <a href="http://desarrollotroll.com/" style="color:white; font-weight:bold; text-decoration:underline">desarrollotroll</a>
                     </div>
                 </div>
             </div>
