@@ -1,3 +1,10 @@
+#contactForm label {
+  background: white;
+}
+#search div .panel-body {
+    /* background: #3e3a8c; */
+}
+
 .navbar-inverse{
     -webkit-box-shadow: -2px 8px 7px -7px rgba(120,120,120,1);
     -moz-box-shadow: -2px 8px 7px -7px rgba(120,120,120,1);
@@ -8,10 +15,7 @@
 body{
     background-color: #FEFEFE        ;
 }
-.btn{
-    border-radius: 0px;
 
-}
 
 #limpiar{
     width: 82px;

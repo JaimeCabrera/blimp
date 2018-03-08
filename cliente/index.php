@@ -4,15 +4,17 @@
     <meta charset="utf-8">
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bus Line Map</title>
+    <title>blimp</title>
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Theme CSS -->
     <link href="css/freelancer.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/stilos.css">
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" src="assets/favicon.png">
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/busqueda.js"></script>
     <script type="text/javascript">
@@ -70,13 +72,13 @@
         </div>
     </header>
     <!-- Header -->
-    <section class="success" id="search">
+    <section  id="search">
         <div class="container">
           <div class="row">
             <div class="col-lg-offset-1 col-lg-10">
               <div class="input-group">
                 <span class="input-group-btn">
-                  <label class="btn btn-default" >Buscar!</label>
+                  <button type="button" class="btn btn-primary">Buscar</button>
                 </span>
                 <input type="text" class="form-control" placeholder="Escriba lugar de destino..."  name="caja_busqueda" id="caja_busqueda">
               </div>
@@ -98,11 +100,13 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
+                  <h4 class="text-center">Misión</h4>
                     <p style="text-align:justify">
 Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
                     </p>
                 </div>
                 <div class="col-lg-4">
+                      <h4 class="text-center">Visión</h4>
                     <p style="text-align:justify">ra que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
 </p>
                 </div>
@@ -195,7 +199,7 @@ Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de te
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; blimp 2016. Powered by: <a href="http://desarrollotroll.com/" style="color:white; font-weight:bold; text-decoration:underline">desarrollotroll</a>
+                        Copyright &copy; blimp 2018. Powered by: <a href="http://desarrollotroll.com/" style="color:white; font-weight:bold; text-decoration:underline">desarrollotroll</a>
                     </div>
                 </div>
             </div>

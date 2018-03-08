@@ -17,6 +17,7 @@ include "php/rutasInformacion.php";
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" src="assets/favicon.png">
     <link rel="stylesheet" href="css/stilos.css">
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script src="js/trazaLinea.js"></script>
@@ -24,16 +25,6 @@ include "php/rutasInformacion.php";
     <script src="js/mapbox-gl.js"></script>
     <link href="css/mapbox-gl.css" rel='stylesheet' />
     <script src="js/creaLineaMapa.js"></script>
-    <style>
-        /*body { margin:-1%; padding:30%; }*/
-        /* #map { position:relative;; top:auto; bottom:auto; width:71%;  } */
-        /* #Lista{    margin-left: 62%;  position: absolute;} */
-        .container{
-          padding-right: 0%;
-          padding-left: 2%;
-          width: 78%;}
-    </style>
-
 </head>
 <body id="page-top" class="index">
       <!-- Navigation -->
@@ -192,7 +183,7 @@ include "php/rutasInformacion.php";
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; blimp 2016. Powered by: <a href="http://desarrollotroll.com/" style="color:white; font-weight:bold; text-decoration:underline">desarrollotroll</a>
+                        Copyright &copy; blimp 2018. Powered by: <a href="http://desarrollotroll.com/" style="color:white; font-weight:bold; text-decoration:underline">desarrollotroll</a>
                     </div>
                 </div>
             </div>
