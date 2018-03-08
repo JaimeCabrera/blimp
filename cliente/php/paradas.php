@@ -7,6 +7,5 @@ $num=0;
   $lng[$num]=$ruta['longitud'];
   $num++;
  }
- 
- $bol=9;
+
 ?>
