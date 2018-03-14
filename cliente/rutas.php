@@ -171,8 +171,8 @@ include "php/rutasInformacion.php";
                             </li>
                         </ul>
                     </div>
+                    <h3>Acerca de blimp</h3>
                     <div class="footer-col col-md-4">
-                        <h3>Acerca de moviggo</h3>
                         serviciocliente@blimp.com<br>
             Teléfono (593) (07) 258-8669 ext. 128
                     </div>
