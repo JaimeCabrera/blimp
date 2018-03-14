@@ -10,9 +10,6 @@
         <link rel="stylesheet" href="boostrap/css/stilos.css">
     </head>
     <body>
-        <script>
-            
-        </script>
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -39,9 +36,9 @@
         <nav class="mostrar" id="bs">
             <ul class="menu">
                 <li ><b><a id="Paradas" href= "home.php"style="cursor: pointer;" ><span class="glyphicon glyphicon-bed"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paradas </a></b></li>
-                <li><b><a style="cursor: pointer;" id="Inicio"> <span class="glyphicon glyphicon glyphicon-send"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rutas</a></b></li>
-                <li><b><a href="#"><span class="glyphicon glyphicon-calendar"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;horarios </a></b></li>
-                <li><b><a href="#"><span class="glyphicon glyphicon-menu-hamburger"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lineas </a></b></li>                
+                <li><b><a  href="verRutas.php"style="cursor: pointer;" id="Inicio"> <span class="glyphicon glyphicon glyphicon-send"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rutas</a></b></li>
+                <li><b><a href="verHorarios.php"><span class="glyphicon glyphicon-calendar"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;horarios </a></b></li>
+                             
             </ul>
         </nav>
         <?php
@@ -56,7 +53,6 @@
                 <div class="panel-heading" >
                     <h5 class="headingParadas">Editar Informacion de las Paradas</h5>
                 </div>
-
                 <div class="panel-body">
                     <div class="container-fluid">
 
@@ -64,9 +60,7 @@
                             <div class="form-group">  
                                  
                                  <label for="id_parada">ID parada</label>
-                                <input type="text" class="form-control" id="idParadas" name="idParadas" value="
-                                <?php echo $con['id_paradas'];
-                                ?>" disabled>
+                                <input type="text" class="form-control" id="idParadas" name="idParadas" value="<?php echo $con['id_paradas'];?>" disabled>
 
                             </div>                                  
                             <div class="input-group">

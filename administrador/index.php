@@ -15,12 +15,12 @@
             <div class= "col-md-12 col-xs-12" >
                 <div class="row">
                     <div class="col-md-6">
-                        <h2>Login Bus Line Map</h2>
+                        <h2>Login BusLineMap</h2>
                         <div class="panel panel-info">
                             <div class="panel-body">
                                 <form role="form" name="login" action="php/login.php" method="post">
                                     <div class="form-group">
-                                        <label for="username">Ingrese el Nombre de usuario o email</label>
+                                        <label for="username">Ingrese el Nombre de usuario </label>
                                         &nbsp;
                                         <input type="text" class="form-control" id="username" name="username" placeholder="Nombre de usuario">
                                         &nbsp;
