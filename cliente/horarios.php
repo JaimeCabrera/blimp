@@ -10,7 +10,7 @@
     <!-- Theme CSS -->
     <link href="css/freelancer.min.css" rel="stylesheet">
     <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/png" src="assets/blimpfavicon.png">
   </head>
@@ -85,14 +85,14 @@
                         <h3>Redes sociales</h3>
                         <ul class="list-inline">
                             <li>
-                                <a href="https://www.facebook.com/universidadnacionaloja" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                                <a href="https://www.facebook.com/universidadnacionaloja" class="btn-social btn-outline"><i class="fab fa-facebook-f"></i></a>
                             </li>
-                                <a href="https://twitter.com/nacionaldeloja" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                                <a href="https://twitter.com/nacionaldeloja" class="btn-social btn-outline"><i class="fab fa-twitter"></i></a>
                             </li>
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>Acerca de moviggo</h3>
+                        <h3>Acerca de blimp</h3>
                         serviciocliente@blimp.com<br>
 						Teléfono (593) (07) 258-8669 ext. 128
                     </div>
