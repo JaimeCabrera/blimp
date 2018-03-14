@@ -1,5 +1,6 @@
 
 <?php
+
 $path = $_SERVER['DOCUMENT_ROOT'];
 #session_start();
 if(!isset($_SESSION["id_administrador"]) || $_SESSION["id_administrador"]==null){
@@ -7,9 +8,9 @@ if(!isset($_SESSION["id_administrador"]) || $_SESSION["id_administrador"]==null)
 }
 require_once '' . $path . '/blimp/administrador/php/database/databaseConnect.php';
 ?>
-<div class="panel panel-success" >
+<div class="panel panel-success" style="background-color:  #fbfcfc ;">
     <!-- Default panel contents -->
-    <div class="panel-heading" >
+    <div class="panel-heading" style=" background-color:  #454545 ; color: #f5f5f5;">
         <h4 class="headingParadas">&nbsp;&nbsp;<span class="glyphicon glyphicon-bed"></span>&nbsp;&nbsp;&nbsp;Paradas</h4>
     </div>
 
@@ -36,14 +37,17 @@ require_once '' . $path . '/blimp/administrador/php/database/databaseConnect.php
                         <th>Latitud</th>
                         <th>Longitud</th>
                         <th>Nombre de la ruta</th>
-                        <th style="width: 20px;">acciones</th>
+                        <th style="width: 180px; text-align: center;">Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
                     <form role="form" name="formListCbLanguage" method="post" action="../home.php">
                      <?php
                         try {
+
                             $resultado = mysqli_query($con, "SELECT * FROM paradas LEFT JOIN rutas ON paradas.rutas_id_ruta = rutas.id_ruta ORDER by id_paradas");
+                            
+                           
                             while ($paradas = $resultado->fetch_array()) {
 
                                 echo"<tr>";
@@ -55,14 +59,15 @@ require_once '' . $path . '/blimp/administrador/php/database/databaseConnect.php
                                 #href='form_edit.php?id_paradas=" . $paradas["id_paradas"] . "'  para editar
                                 echo"<td>";
                                 $id=$paradas["id_paradas"];
-                                echo " <a class='editar' href='form_edit.php?id_paradas=" . $paradas["id_paradas"] . "' id='editarParada.'".$paradas["id_paradas"]."''  name='".$paradas["id_paradas"]."' style='cursor: pointer;text-decoration:none;'                         
+                                echo"&nbsp;";
+                                echo " <a class='btn btn-success btn-xs' href='form_edit.php?id_paradas=" . $paradas["id_paradas"] . "' id='editarParada.'".$paradas["id_paradas"]."''  name='".$paradas["id_paradas"]."' style='cursor: pointer;text-decoration:none;'                         
 
                                 >&nbsp;&nbsp;&nbsp;<span class='glyphicon glyphicon-edit'></span>
-                                </a>";
-                                echo" <a class='eliminar' id='deleteParada' href='form_delete.php?id_paradas=" . $paradas["id_paradas"] . "' name='".$paradas["id_paradas"]."' style='cursor: pointer;text-decoration:none;' title='Eliminar'                       
+                                Editar</a>";
+                                echo" <a class='btn btn-danger btn-xs' id='deleteParada' href='form_delete.php?id_paradas=" . $paradas["id_paradas"] . "' name='".$paradas["id_paradas"]."' style='cursor: pointer;text-decoration:none;' title='Eliminar'                       
 
                                 >&nbsp;&nbsp;&nbsp;<span class='glyphicon glyphicon-trash'></span>
-                                </a>";
+                                Eliminar</a>";
 
                                 echo"</td>";
 
@@ -98,16 +103,16 @@ require_once '' . $path . '/blimp/administrador/php/database/databaseConnect.php
                         <div class="modal-body">                                    
                             <div class="input-group">
                                 <label for="idDireccion">Direccion</label>
-                                <input type="text" class="form-control" id="idDireccion" name="idDireccion" placeholder="Ej. Calle1 interseccion calle2" >
+                                <input type="text" class="form-control" id="idDireccion" name="idDireccion" placeholder="Ej. Calle1 interseccion calle2" required >
                                 <small class="text-muted"> Calle principal y calle secundaria.</small>
                             </div>
                             <div class="input-group"> 
                                 <label for="latitud">Latitud</label>
-                                <input type="text" class="form-control" id="latitud" name="latitud" placeholder="Latitud" aria-describedby="sizing-addon2">
+                                <input type="text" class="form-control" id="latitud" name="latitud" placeholder="Latitud" aria-describedby="sizing-addon2"maxlength="10" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" required>
                             </div>
                             <div class="input-group"> 
                                 <label for="longitud">Longitud</label>
-                                <input type="text" class="form-control" id="longitud" name="longitud" placeholder="longitud" aria-describedby="sizing-addon2">
+                                <input type="text" class="form-control" id="longitud" name="longitud" placeholder="longitud" aria-describedby="sizing-addon2" required>
                                 <small class="text-muted"> Las coordenar de la ubicacion de la parada</small>
                             </div> 
 
@@ -127,10 +132,11 @@ require_once '' . $path . '/blimp/administrador/php/database/databaseConnect.php
                         </div>
                         <div class="modal-footer">
                             <button id="save-parada" name="save-parada" type="submit" class="btn btn-success">Guardar</button>
-                            <button id="cancel"type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>                                    
+                            <a id="cancel" type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</a>                                    
                         </div>
                     </form>
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->  
     </div>
+
