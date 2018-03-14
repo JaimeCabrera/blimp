@@ -1,5 +1,5 @@
 
-<div class="navbar navbar-default">
+<div class="navbar navbar-inverse">
     <!-- Brand and toggle get grouped for better mobile display -->
     <h4><p class="text-center">Administración de BusLineMap</p></h4>
     <!-- Collect the nav links, forms, and other content for toggling -->

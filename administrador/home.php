@@ -16,13 +16,11 @@ if(!isset($_SESSION["id_administrador"]) || $_SESSION["id_administrador"]==null)
         <link rel="stylesheet" href="boostrap/css/stilos.css">
        <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet"> 
         <link rel="stylesheet" href="boostrap/css/bootstrap-responsive.min.css">
-       
-     
     </head>
     <script>
         $(document).ready(function () {
 
-            $("#rutas").click(function () {
+            $("#rutas1").click(function () {
                 /*alert("The paragraph was clicked.");*/
                 $("#seccionRecargar1").show();
                 $("#seccionRecargar").hide();
@@ -67,24 +65,21 @@ if(!isset($_SESSION["id_administrador"]) || $_SESSION["id_administrador"]==null)
         <nav class="mostrar" id="bs">
             <ul class="menu">
                 <li ><b><a id="Paradas" href= "home.php"style="cursor: pointer;" ><span class="glyphicon glyphicon-bed"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paradas </a></b></li>
-                <li><b><a style="cursor: pointer;" id="rutas"> <span class="glyphicon glyphicon glyphicon-send"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rutas</a></b></li>
-                <li><b><a href="#"><span class="glyphicon glyphicon-calendar"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;horarios </a></b></li>
-                <li><b><a href="#"><span class="glyphicon glyphicon-menu-hamburger"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lineas </a></b></li>                
+                <li><b><a  href="verRutas.php"style="cursor: pointer;" id="rutas"> <span class="glyphicon glyphicon glyphicon-send"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rutas</a></b></li>
+                <li><b><a href="verHorarios.php"><span class="glyphicon glyphicon-calendar"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;horarios </a></b></li>
+                               
             </ul>
         </nav>
         <!--Menu vertical fin-->
         <!--divs dond estara el contenido de las paginas-->
-        <div class="seccionRecargar" id="seccionRecargar" name"seccionRecargar">
+        <div class="seccionRecargar" id="seccionRecargar" name="seccionRecargar">
            <?php include''.$path.'/blimp/administrador/php/verParadas.php';?>           
         </div><br>
         <div class="seccionRecargar1" id="seccionRecargar1">
-            <?php include''.$path.'/blimp/administrador/php/verRutas.php';?>    
         </div>
     </body>
     <script type="text/javascript" src="js/paradas.js"></script>
-
     <br>
-    
     <div class="footer" >
         <div class="container">
             <center> <b class="copyright"><a href="http://unl.edu.ec/"> UNL</a> &copy; <?php echo date("Y")?> BusLineMap </b>
@@ -93,5 +88,4 @@ if(!isset($_SESSION["id_administrador"]) || $_SESSION["id_administrador"]==null)
             </center>     
     </div>
 </div>
-
 </html>
