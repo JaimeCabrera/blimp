@@ -78,7 +78,7 @@
             <div class="col-lg-offset-1 col-lg-10">
               <div class="input-group">
                 <span class="input-group-btn">
-                  <button type="button" class="btn btn-primary">Buscar</button>
+                  <button type="button" class="btn btn-primary btn-lg">Buscar</button>
                 </span>
                 <input type="text" class="form-control" placeholder="Escriba lugar de destino..."  name="caja_busqueda" id="caja_busqueda">
               </div>
@@ -186,7 +186,7 @@
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>Acerca de moviggo</h3>
+                        <h3>Acerca de blimp</h3>
                         serviciocliente@blimp.com<br>
 						Teléfono (593) (07) 258-8669 ext. 128
                     </div>

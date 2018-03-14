@@ -5,6 +5,11 @@
     /* background: #3e3a8c; */
 }
 
+.form-control{
+  height: 46px;
+  font-size: 18px;
+}
+
 .navbar-inverse{
     -webkit-box-shadow: -2px 8px 7px -7px rgba(120,120,120,1);
     -moz-box-shadow: -2px 8px 7px -7px rgba(120,120,120,1);
