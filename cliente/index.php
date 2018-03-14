@@ -11,7 +11,7 @@
     <link href="css/freelancer.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/stilos.css">
     <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/png" src="assets/favicon.png">
@@ -179,9 +179,9 @@
                         <h3>Redes sociales</h3>
                         <ul class="list-inline">
                             <li>
-                                <a href="https://www.facebook.com/universidadnacionaloja" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                                <a href="https://www.facebook.com/universidadnacionaloja" class="btn-social btn-outline"><i class="fab fa-facebook-f"></i></a>
                             </li>
-                                <a href="https://twitter.com/nacionaldeloja" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                                <a href="https://twitter.com/nacionaldeloja" class="btn-social btn-outline"><i class="fab fa-twitter"></i></a>
                             </li>
                         </ul>
                     </div>
