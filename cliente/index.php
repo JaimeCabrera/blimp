@@ -41,6 +41,9 @@
                         <a href="index.php#page-top"></a>
                     </li>
                     <li class="page-scroll">
+                        <a href="index.php">Inicio</a>
+                    </li>
+                    <li class="page-scroll">
                         <a href="rutas.php">Rutas</a>
                     </li>
                     <li class="page-scroll">
@@ -157,7 +160,7 @@
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Enviar</button>
+                                <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
                             </div>
                         </div>
                     </form>
