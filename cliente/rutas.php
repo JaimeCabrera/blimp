@@ -45,6 +45,9 @@ header("Access-Control-Allow-Origin: *");
                             <a href="index.php#page-top"></a>
                         </li>
                         <li class="page-scroll">
+                            <a href="index.php">Inicio</a>
+                        </li>
+                        <li class="page-scroll">
                             <a href="rutas.php">Rutas</a>
                         </li>
                         <li class="page-scroll">
@@ -79,7 +82,7 @@ header("Access-Control-Allow-Origin: *");
                     </div>
                     <div class="col-md-4">
                         <div id="Lista">
-                            <h3 style="color:#337ab7;" >RUTAS</h3>
+                            <h3>RUTAS</h3>
                             <div class="panel-group" id="accordion">
                                 <div class="panel panel-success">
                                     <?for ($i=0; $i < $aum; $i++) { ?>
@@ -119,7 +122,7 @@ header("Access-Control-Allow-Origin: *");
             function showPosition(position) {
                 var lat = position.coords.latitude;
                 var long = position.coords.longitude;
-                /*x.innerHTML = "Latitude: " + position.coords.latitude + 
+                /*x.innerHTML = "Latitude: " + position.coords.latitude +
                  "<br>Longitude: " + position.coords.longitude;*/
                 var i = 0;
                 mapboxgl.accessToken = 'pk.eyJ1IjoiZ3Fyb290IiwiYSI6ImNqZGx6OGh1cjBmcjMzMm85MGw0Y3hkaXkifQ.aUDBTOBjCfRtDhKGWfGNcQ';

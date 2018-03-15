@@ -13,6 +13,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/png" src="assets/blimpfavicon.png">
+    <link rel="stylesheet" href="css/stilos.css">
   </head>
   <body id="page-top" class="index">
       <!-- Navigation -->
@@ -30,6 +31,9 @@
                   <ul class="nav navbar-nav navbar-right">
                       <li class="hidden">
                           <a href="index.php#page-top"></a>
+                      </li>
+                      <li class="page-scroll">
+                          <a href="index.php">Inicio</a>
                       </li>
                       <li class="page-scroll">
                           <a href="rutas.php">Rutas</a>

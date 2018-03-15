@@ -1,3 +1,36 @@
+
+.floating-label-form-group-with-focus label {
+    color: #24b5a1;
+}
+
+a{
+    color: #24b5a1;
+    outline: 0;
+}
+
+a:focus, a:hover {
+    color: #3d398c;
+    outline: 0;
+}
+
+.panel-success>.panel-heading {
+    color: #fff;
+    background-color: #24b5a1;
+    border-color: #24b5a1;
+}
+
+section.success {
+    background: #24b5a1;
+}
+
+footer .footer-below {
+    background-color: #24b5a1;
+}
+
+header {
+    background: #24b5a1;
+}
+
 #contactForm label {
   background: white;
 }
