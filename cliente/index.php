@@ -21,27 +21,22 @@
             <span class="skills">guiandote a tu destino...</span>
           </div>
         </div>
-      </div>
-    </div>
-  </header>
-  <!-- Search -->
-  <section  id="search">
-    <div class="container">
+      </div><br><br>
       <div class="row">
-        <div class="col-lg-offset-1 col-lg-10">
+        <div class="col-lg-offset-2 col-lg-8">
           <div class="input-group">
             <span class="input-group-btn">
-              <button type="button" class="btn btn-primary btn-lg">Buscar</button>
+              <!-- <button type="button" class="btn btn-primary btn-lg">Buscar</button> -->
+              <input type="text" class="form-control" placeholder="Escriba lugar de destino..."  name="caja_busqueda" id="caja_busqueda">
             </span>
-            <input type="text" class="form-control" placeholder="Escriba lugar de destino..."  name="caja_busqueda" id="caja_busqueda">
           </div>
        </div>
       </div>
       <div class="row">
-        <div class="col-lg-offset-1 col-lg-10" id="datos"></div>
+        <div class="col-lg-offset-2 col-lg-8" id="datos"></div>
       </div>
     </div>
-  </section>
+  </header>
   <!-- Nosotros Section -->
   <section class="success" id="nosotros">
     <div class="container">
@@ -52,13 +47,13 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-4 col-lg-offset-2">
+        <div class="col-md-4 col-md-offset-2">
           <h4 class="text-center">Misión</h4>
             <p style="text-align:justify">
               Brindar a la ciudadanía en general información segura y real para la localización de su destino utilizando las lineas de bus alimentadores de la ciudad de Loja.
             </p>
         </div>
-        <div class="col-lg-4">
+        <div class="col-md-4">
           <h4 class="text-center">Visión</h4>
           <p style="text-align:justify">
             Convertirse en el medio mas reccurente de informacion de vias de transporte publico para la ciudadania del sur del Ecuador.
