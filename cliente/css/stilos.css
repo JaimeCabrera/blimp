@@ -1,3 +1,6 @@
+.input-group .form-control {
+    border-radius: 5px !important;
+}
 
 .floating-label-form-group-with-focus label {
     color: #24b5a1;
@@ -29,6 +32,7 @@ footer .footer-below {
 
 header {
     background: #24b5a1;
+    height: 700px;
 }
 
 #contactForm label {
