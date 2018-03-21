@@ -12,7 +12,7 @@ header("Access-Control-Allow-Origin: *");
   <link href="css/mapbox-gl.css" rel='stylesheet' />
   <script src="js/creaLineaMapa.js"></script>
 </head>
-<body id="page-top" class="index" onload="getLocation()">
+<body id="page-top" class="index" >
   <!-- Navigation -->
   <?php include("navbar.php"); ?>
   <!-- Rutas Section -->
@@ -53,61 +53,22 @@ header("Access-Control-Allow-Origin: *");
     </div>
   </section>
   <script>
-    var x = document.getElementById("page-top");
-
-    function getLocation() {
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-      } else {
-        alert("Geolocation is not supported by this browser.");
-      }
-    }
-
-    function showPosition(position) {
-      var lat = position.coords.latitude;
-      var long = position.coords.longitude;
-      /*x.innerHTML = "Latitude: " + position.coords.latitude +
-       "<br>Longitude: " + position.coords.longitude;*/
       var i = 0;
       mapboxgl.accessToken = 'pk.eyJ1IjoiZ3Fyb290IiwiYSI6ImNqZGx6OGh1cjBmcjMzMm85MGw0Y3hkaXkifQ.aUDBTOBjCfRtDhKGWfGNcQ';
-
       var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v9',
-        center: [long, lat],
+        center: [-4.0291619,-79.2114938],
         zoom: 13.4
       });
-
-      map.on('load', function () {
-        map.loadImage('https://upload.wikimedia.org/wikipedia/commons/5/50/Location-304467_960_720.png', function (error, image) {
-          if (error)
-              throw error;
-          map.addImage('marker', image);
-          map.addLayer({
-            "id": "points",
-            "type": "symbol",
-            "source": {
-              "type": "geojson",
-              "data": {
-                "type": "FeatureCollection",
-                "features": [{
-                  "type": "Feature",
-                  "geometry": {
-                    "type": "Point",
-                    "coordinates": [long, lat]
-                  }
-                }]
-              }
-            },
-            "layout": {
-              "icon-image": "marker",
-              "icon-size": 0.1
-            }
-          });
-        });
-      });
-
-      map.addControl(new mapboxgl.NavigationControl());
+      // Add geolocate control to the map.
+map.addControl(new mapboxgl.GeolocateControl({
+    positionOptions: {
+        enableHighAccuracy: true
+    },
+    trackUserLocation: true
+}));
+ 
       map.on('load', function () {
         creaMapa();
         var lat =<?php echo json_encode($lat); ?>;
@@ -149,7 +110,7 @@ header("Access-Control-Allow-Origin: *");
           }
         ?>
       });
-    }
+    
   </script>
   <!-- Footer -->
-  <?php include("footer.php"); ?>
+<?php include("footer.php"); ?>
