@@ -14,6 +14,7 @@ if(isset($_POST['consulta'])){
                   <div class='panel panel-primary'>
                     <div class='panel-body' style='color:#5d6d7e'>
                       <b>Ruta:</b> <a id='$fila[denotacion]' onclick='clicks(this.id)'>".$fila['denotacion']." (".$fila['nombreLineaBus'].") </a></br> <b>Inicio: </b>".$fila['incioRuta']." </br> <b>Fin: </b>".$fila['finRuta']." </br> <b>Recorrido: </b>".$fila['recorrido']."
+
                     </div>
                   </div>
                   </div>";

@@ -34,7 +34,7 @@
       </div>
       
       <div class="row">
-        <div class="col-lg-offset-2 col-lg-8" id="datos"></div>
+        <div class="col-lg-offset-2 col-lg-8 panel-body" id="datos"></div>
       </div>
       <!-- sitios mas buscados-->
       <div class="row">
