@@ -32,8 +32,16 @@
           </div>
        </div>
       </div>
+      
       <div class="row">
         <div class="col-lg-offset-2 col-lg-8 panel-body" id="datos"></div>
+      </div>
+      <!-- sitios mas buscados-->
+      <div class="row">
+          <h5 style="color:#ecf0f1;text-align: center;"> rutas mas buscadas... </h5><br>
+          <div class=" col-md-12" id="sitios">
+              <?php include "php/rutasMasBuscadas.php";?>
+          </div>
       </div>
     </div>
   </header>
