@@ -15,12 +15,12 @@ while ($linea = $result->fetch_array()) {
     }
     echo"<div class='col-md-4'>
             <div class='panel panel-info'>
-            <div class='panel-heading'> 
-                <a href='rutas.php?variable=$denotacion' style='cursor:hand; '>$denotacion</a> 
+            <div class='panel-heading'>
+                <a style='color: #ffffff' href='rutas.php?variable=$denotacion' style='cursor:hand; '>$denotacion</a>
             </div>
                 <div class='panel-body' style='color:#5d6d7e'>
-                    $recorrido<br><br>
-                    <small style='color: #abb2b9'>Total de busquedas: $busquedas</small>
+                    $nombreRuta<br><br>
+                    <small>Total de busquedas: $busquedas</small>
                 </div>
             </div>
         </div>";

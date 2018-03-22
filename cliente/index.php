@@ -32,19 +32,28 @@
           </div>
        </div>
       </div>
-      
+
       <div class="row">
         <div class="col-lg-offset-2 col-lg-8 panel-body" id="datos"></div>
       </div>
-      <!-- sitios mas buscados-->
-      <div class="row">
-          <h5 style="color:#ecf0f1;text-align: center;"> rutas mas buscadas... </h5><br>
-          <div class=" col-md-12" id="sitios">
-              <?php include "php/rutasMasBuscadas.php";?>
-          </div>
-      </div>
     </div>
   </header>
+  <section id="masbuscadas">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2>más buscadas...</h2>
+          <br>
+          <br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12" id="sitios">
+          <?php include "php/rutasMasBuscadas.php";?>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- Nosotros Section -->
   <section class="success" id="nosotros">
     <div class="container">
