@@ -12,14 +12,15 @@ if(isset($_POST['consulta'])){
       while($fila=$result->fetch_array()){
         $salida.= "<div>
                   <div class='panel panel-primary'>
-                    <div class='panel-body'>
-                      <b>Ruta:</b> <a id='$fila[denotacion]' onclick='clicks(this.id)'>".$fila['denotacion']." (".$fila['nombreLineaBus'].") </a></br> <b>Inicio: </b>".$fila['incioRuta']." </br> <b>Fin: </b>".$fila['finRuta']." </br> <b>Recorrido: </b>".$fila['recorrido']."
+                    <div class='panel-body' style='color:#5d6d7e'>
+                      <b>Ruta:</b> <a id='$fila[denotacion]' onclick='clicks(this.id)'>".$fila['denotacion']." (".$fila['nombreLineaBus'].") </a></br> <b>Inicio: </b>".$fila['incioRuta']." </br> <b>Fin: </b>".$fila['finRuta']."
+
                     </div>
                   </div>
                   </div>";
                 }
     }else{
-      $salida="<div class='well well-lg'>No se encuentra esa ruta :(</div>";
+      $salida="<div class='well well-lg' style='color:#5d6d7e'>No se encuentra esa ruta :(</div>";
     }
 }
 echo $salida;
