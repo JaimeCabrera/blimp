@@ -1,3 +1,12 @@
+.panel-info>.panel-heading {
+  background-color: #4eb6a1;
+  text-align: center;
+}
+
+#masbuscadas h2{
+  color: #444
+}
+
 .panel-body {
   color: #333;
 }

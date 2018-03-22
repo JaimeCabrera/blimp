@@ -75,7 +75,7 @@ header("Access-Control-Allow-Origin: *");
                                     </h4>
                                 </div>
                                 <div id="collapse<?php echo $i ?>" class="panel-collapse collapse collapse">
-                                    <div class="panel-body"><b>Inicia:</b><?echo " ".$inicioRuta[$i]." "?> </br> <b>Recorrido:</b><?echo " ".$recorrido[$i]." "?> </br><b>Termina: </b><?echo" ".$finRuta[$i]." "?></div>
+                                    <div class="panel-body"><b>Inicia:</b><?echo " ".$inicioRuta[$i]." "?></br><b>Termina: </b><?echo" ".$finRuta[$i]." "?></div>
                                 </div>
                                 <?}?>
                             </div>
