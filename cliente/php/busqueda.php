@@ -13,7 +13,7 @@ if(isset($_POST['consulta'])){
         $salida.= "<div>
                   <div class='panel panel-primary'>
                     <div class='panel-body'>
-                      <b>Ruta:</b> <a id='$fila[denotacion]' onclick='clicks(this.id)'>".$fila['denotacion']." (".$fila['nombreLineaBus'].") </a></br> <b>Inicio: </b>".$fila['incioRuta']." </br> <b>Fin: </b>".$fila['finRuta']." </br> <b>Recorrido: </b>".$fila['recorrido']."
+                      <b>Ruta:</b> <a id='$fila[denotacion]' onclick='clicks(this.id)'>".$fila['denotacion']." (".$fila['nombreLineaBus'].") </a></br> <b>Inicio: </b>".$fila['incioRuta']." </br> <b>Fin: </b>".$fila['finRuta']."
                     </div>
                   </div>
                   </div>";
