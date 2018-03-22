@@ -19,7 +19,7 @@ header("Access-Control-Allow-Origin: *");
 <style>
     #sitios{
         display: none;
-    }   
+    }
 </style>
 </head>
 <body id="page-top" class="index" >
@@ -69,7 +69,7 @@ header("Access-Control-Allow-Origin: *");
                                 <?for ($i=0; $i < $aum; $i++) { ?>
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse<?echo $i?>"  id="<?echo $id[$i];?>" onclick="activarRuta(this.id)">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse<?echo $i?>"  id="<?echo $id[$i];?>" onclick="paradas(this.id)">
                                             <?echo $nombreLineaBus[$i]."  (". $nombreRuta[$i].")"?>
                                         </a>
                                     </h4>
@@ -92,7 +92,7 @@ header("Access-Control-Allow-Origin: *");
             container: 'map',
             style: 'mapbox://styles/mapbox/streets-v9',
             center: [-79.1996278, -3.9914916],
-            
+
             zoom: 13.7
         });
         // Add geolocate control to the map.
@@ -109,7 +109,7 @@ header("Access-Control-Allow-Origin: *");
         map.addControl(new mapboxgl.FullscreenControl());
 
 
-        
+
         map.on('load', function () {
             creaMapa();
             var lat =<?php echo json_encode($lat); ?>;
@@ -144,14 +144,81 @@ header("Access-Control-Allow-Origin: *");
                     }
                 });
             }
+            for(var i=0; i<"<?echo $num?>";i++){
+              map.setLayoutProperty(i.toString(), 'visibility', 'none');
+            }
 <?php
 if (isset($_GET['variable'])) {
     $variable = $_GET['variable'];
     echo"activarRuta('" . $variable . "')";
 }
 ?>
-        });
 
+        });
+        function paradas(id){
+          activarRuta(id);
+          var luno =<?php echo json_encode($luno); ?>;
+          var ldos =<?php echo json_encode($ldos); ?>;
+          var ltres =<?php echo json_encode($ltres); ?>;
+          var lcuatro =<?php echo json_encode($lcuatro); ?>;
+          var lcinco =<?php echo json_encode($lcinco); ?>;
+          var lseis =<?php echo json_encode($lseis); ?>;
+          if (id=="L-1"){
+            for(var i=0; i<"<?echo $num?>";i++){
+              map.setLayoutProperty(i.toString(), 'visibility', 'none');
+            }
+            for(var i=0; i<luno.length ;i++){
+              map.setLayoutProperty(luno[i].toString(), 'visibility', 'visible');
+            }
+
+          }
+
+          if (id=="L-3"){
+            for(var i=0; i<"<?echo $num?>";i++){
+              map.setLayoutProperty(i.toString(), 'visibility', 'none');
+            }
+            for(var i=0; i<ldos.length ;i++){
+              map.setLayoutProperty(ldos[i].toString(), 'visibility', 'visible');
+            }
+
+          }
+          if (id=="L-4"){
+            for(var i=0; i<"<?echo $num?>";i++){
+              map.setLayoutProperty(i.toString(), 'visibility', 'none');
+            }
+            for(var i=0; i<ltres.length ;i++){
+              map.setLayoutProperty(ltres[i].toString(), 'visibility', 'visible');
+            }
+
+          }
+          if (id=="L-5"){
+            for(var i=0; i<"<?echo $num?>";i++){
+              map.setLayoutProperty(i.toString(), 'visibility', 'none');
+            }
+            for(var i=0; i<lcuatro.length ;i++){
+              map.setLayoutProperty(lcuatro[i].toString(), 'visibility', 'visible');
+            }
+
+          }
+          if (id=="L-7"){
+            for(var i=0; i<"<?echo $num?>";i++){
+              map.setLayoutProperty(i.toString(), 'visibility', 'none');
+            }
+            for(var i=0; i<lcinco.length ;i++){
+              map.setLayoutProperty(lcinco[i].toString(), 'visibility', 'visible');
+            }
+
+          }
+          if (id=="L-12"){
+            for(var i=0; i<"<?echo $num?>";i++){
+              map.setLayoutProperty(i.toString(), 'visibility', 'none');
+            }
+            for(var i=0; i<lseis.length ;i++){
+              map.setLayoutProperty(lseis[i].toString(), 'visibility', 'visible');
+            }
+
+          }
+        }
     </script>
     <!-- Footer -->
     <?php include("footer.php"); ?>
