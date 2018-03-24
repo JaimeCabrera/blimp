@@ -102,7 +102,7 @@ header("Access-Control-Allow-Origin: *");
                 timeout: 6000
             },
             trackUserLocation: true,
-            showUserLocation: false
+            showUserLocation: true
         }));
         var nav = new mapboxgl.NavigationControl();
         map.addControl(nav, 'top-right');
