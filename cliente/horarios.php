@@ -15,11 +15,7 @@
       </div>
       <div class="row">
         <div class="col-lg-12 text-center">
-          <div class="panel panel-default">
-            <div class="panel-body">
-             <?php include'php/consultarRutas.php'; ?>
-            </div>
-          </div>
+             <?php include'php/consultarTurnos.php'; ?>
         </div>
       </div>
     </div>

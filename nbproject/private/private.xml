@@ -3,9 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/blimp/cliente/rutas.php</file>
-            <file>file:/C:/xampp/htdocs/blimp/cliente/index.php</file>
-            <file>file:/C:/xampp/htdocs/blimp/cliente/php/busqueda.php</file>
+            <file>file:/C:/xampp/htdocs/blimp/cliente/php/consultarTurnos.php</file>
+            <file>file:/C:/xampp/htdocs/blimp/cliente/horarios.php</file>
         </group>
     </open-files>
 </project-private>
