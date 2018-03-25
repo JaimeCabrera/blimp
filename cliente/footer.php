@@ -1,7 +1,7 @@
     <footer class="text-center">
       <div class="footer-above">
         <div class="container">
-          <div class="row">
+          <div class="row" id="foot" >
             <div class="footer-col col-md-4">
               <h3>Ubicación</h3>
               Av. Pío Jaramillo Alvarado y Reinaldo Espinosa, La Argelia
