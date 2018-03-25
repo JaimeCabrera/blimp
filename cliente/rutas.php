@@ -9,6 +9,7 @@ header("Access-Control-Allow-Origin: *");
 <script src="js/trazaLinea.js"></script>
 <!-- <script type="text/javascript" src="js/bus.js"></script> -->
 <script src="js/mapbox-gl.js"></script>
+<link href="css/map.css" rel='stylesheet' />
 <link href="css/mapbox-gl.css" rel='stylesheet' />
 <script src="js/creaLineaMapa.js"></script>
 <script>
@@ -150,7 +151,7 @@ header("Access-Control-Allow-Origin: *");
 <?php
 if (isset($_GET['variable'])) {
     $variable = $_GET['variable'];
-    echo"activarRuta('" . $variable . "')";
+    echo"paradas('" . $variable . "')";
 }
 ?>
 
