@@ -60,7 +60,17 @@ header("Access-Control-Allow-Origin: *");
             </div>
             <div class="row">
                 <div class="col-md-8">
-                    <div id="map"></div>
+                    <div id="map" >
+                      <div style="display:none; background:#e6e4e0;" id="oculto" >
+                          <button type="button" class="btn btn-default" id='L-1' onclick="paradas(this.id)">L-1</button>
+                          <button type="button" class="btn btn-primary" id='L-3' onclick="paradas(this.id)">L-3</button>
+                          <button type="button" class="btn btn-success" id='L-4' onclick="paradas(this.id)">L-4</button>
+                          <button type="button" class="btn btn-info" id='L-5' onclick="paradas(this.id)">L-5</button>
+                          <button type="button" class="btn btn-warning" id='L-7' onclick="paradas(this.id)">L-7</button>
+                          <button type="button" class="btn btn-danger" id='L-12' onclick="paradas(this.id)">L-12</button>
+                      </div>
+
+                    </div>
                 </div>
                 <div class="col-md-4">
                     <div id="Lista">
@@ -87,7 +97,7 @@ header("Access-Control-Allow-Origin: *");
         </div>
     </section>
     <script>
-        var i = 0;
+        var a = 0;
         mapboxgl.accessToken = 'pk.eyJ1IjoiZ3Fyb290IiwiYSI6ImNqZGx6OGh1cjBmcjMzMm85MGw0Y3hkaXkifQ.aUDBTOBjCfRtDhKGWfGNcQ';
         var map = new mapboxgl.Map({
             container: 'map',
@@ -105,10 +115,25 @@ header("Access-Control-Allow-Origin: *");
             trackUserLocation: true,
             showUserLocation: true
         }));
+
         var nav = new mapboxgl.NavigationControl();
         map.addControl(nav, 'top-right');
         map.addControl(new mapboxgl.FullscreenControl());
 
+        document.addEventListener("mozfullscreenchange", function () {
+            if (a==0) a=1; else a=0;
+            mostrar(a);
+        }, false);
+
+        document.addEventListener("fullscreenchange", function () {
+          if (a==0) a=1; else a=0;
+          mostrar(a);
+        }, false);
+
+        document.addEventListener("webkitfullscreenchange", function () {
+          if (a==0) a=1; else a=0;
+          mostrar(a);
+        }, false);
 
 
         map.on('load', function () {
@@ -156,6 +181,11 @@ if (isset($_GET['variable'])) {
 ?>
 
         });
+        function mostrar(a){
+          if (a==1){
+            document.getElementById('oculto').style.display='block';
+          }else  document.getElementById('oculto').style.display='none'
+        }
         function paradas(id){
           activarRuta(id);
           var luno =<?php echo json_encode($luno); ?>;
