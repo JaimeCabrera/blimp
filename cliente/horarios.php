@@ -9,7 +9,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2>Horarios de los Buses Urbanos</h2>
+           <h3>Listado de turnos de las lineas de Buses Urbanos</h3>
           <hr class="star-primary">
         </div>
       </div>

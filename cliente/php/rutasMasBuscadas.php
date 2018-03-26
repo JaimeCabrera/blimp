@@ -13,16 +13,12 @@ while ($linea = $result->fetch_array()) {
         $finRuta = $ruta['finRuta'];
         $recorrido = $ruta['recorrido'];
     }
-    echo"<div class='col-md-4'>
-            <div class='panel panel-info'>
-            <div class='panel-heading'>
-                <a style='color: #ffffff' href='rutas.php?variable=$denotacion' style='cursor:hand; '>$denotacion</a>
-            </div>
-                <div class='panel-body' style='color:#5d6d7e'>
-                    $nombreRuta<br><br>
-                    <small>Total de busquedas: $busquedas</small>
-                </div>
-            </div>
-        </div>";
+    echo"<div class='col-xs-12 col-md-4'>
+                <a href='rutas.php?variable=$denotacion' class='thumbnail'>  <h5 style='display: inline-block;'>$denotacion $nombreRuta </h5>            
+                    <img src='assets/icon_bus.png' alt='turno' style='width:10%; text-alling:right'>                    
+                    <small style='color:#5d6d7e; display:inline-block' >Total de busquedas: $busquedas</small>
+                </a>                
+            </div>";
+       
 }
 ?>

@@ -40,13 +40,11 @@
   </header>
   <section id="masbuscadas">
     <div class="container">
-      <div class="row">
         <div class="col-lg-12 text-center">
           <h2>más buscadas...</h2>
           <br>
-          <br>
+
         </div>
-      </div>
       <div class="row">
         <div class="col-lg-12" id="sitios">
           <?php include "php/rutasMasBuscadas.php";?>

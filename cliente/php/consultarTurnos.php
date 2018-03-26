@@ -25,17 +25,17 @@ while ($inforRutas = $resultado->fetch_array()) {
     echo"<div class='col-xs-8 col-md-10'>
             <table class='table'>
 				<thead>
-					<th  class='success' style=''><h5>$nomRuta</h5> </th>
+					<th  class='success' style='color:#7D3C98'><h5>$nomRuta</h5> </th>
 				</thead>
-					<tbody style='color:red'>";
+					<tbody style='color:#B9770E'>";
    						 $pos = 0;
    						 $cont = 4;
    						 foreach ($rowHoraSalida as $valor) {
         					if ($pos++ > $cont) {
            						 $pos = 0;
-            					echo "<td  style='clear:both;float:left;padding:10px;'>" . $valor . "</td>";									
+            					echo "<td  style='clear:both;float:left;padding:10px;'><b>" . $valor . "</b></td>";									
        						 } else {
-            					echo "<td  style='float:left;padding:15px;'>" . $valor . "</td>";
+            					echo "<td  style='float:left;padding:15px;'><b>" . $valor . "</b></td>";
             					
         					}
         					$cont=$cont+5;
