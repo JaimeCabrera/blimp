@@ -16,6 +16,8 @@ if(!isset($_SESSION["id_administrador"]) || $_SESSION["id_administrador"]==null)
         <link rel="stylesheet" href="boostrap/css/stilos.css">
        <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet"> 
         <link rel="stylesheet" href="boostrap/css/bootstrap-responsive.min.css">
+        <script type="text/javascript" src="boostrap/js/mapbox-gl.js"></script>
+        <link rel="stylesheet" href="boostrap/css/mapbox-gl.css">
     </head>
     <script>
         $(document).ready(function () {
@@ -45,6 +47,7 @@ if(!isset($_SESSION["id_administrador"]) || $_SESSION["id_administrador"]==null)
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav nav">
+                        <li><a href="https://blimp.eestudiantes.ec" target="_blank">Ver como cliente</a></li>
                     </ul>
                     <nav class="nav navbar-nav navbar-right">
                         <p style="color: #C5C7CD;" class="navbar-text">Bienvenido Administrador</p>
