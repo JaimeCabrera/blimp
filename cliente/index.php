@@ -26,7 +26,6 @@
         <div class="col-lg-offset-2 col-lg-8">
           <div class="input-group">
             <span class="input-group-btn">
-              <!-- <button type="button" class="btn btn-primary btn-lg">Buscar</button> -->
               <input type="text" class="form-control" placeholder="Escriba lugar de destino..."  name="caja_busqueda" id="caja_busqueda">
             </span>
           </div>
