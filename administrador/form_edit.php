@@ -8,6 +8,8 @@
         <script type="text/javascript" src="boostrap/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="boostrap/css/stilos.css">
+        <script type="text/javascript" src="boostrap/js/mapbox-gl.js"></script>
+        <link rel="stylesheet" href="boostrap/css/mapbox-gl.css">
     </head>
     <body>
         <nav class="navbar navbar-inverse">
@@ -67,7 +69,58 @@
                                 <label for="idDireccion">Dirección</label>
                                 <input type="text" class="form-control" id="Direccion" name="Direccion" value="<?php echo $con["direccion"]; ?>" >
                                 <small class="text-muted"> Calle principal y calle secundaria.</small>
-                            </div>
+                            </div><br>
+                            <style type='text/css'>
+    #info {
+        display: block;
+        position: relative;
+        margin: 1% 1% auto;
+
+        width: 100%;
+        padding: 1px;
+        border: none;
+        border-radius: 3px;
+        font-size: 12px;
+        text-align: center;
+        color: #222;
+        background: #fff;
+    }
+</style>
+<div id="map" style="width: 100%; height: 40%;"></div>
+<pre id='info'></pre>
+                            
+                            <script>
+                                 var a = 0;
+                                 mapboxgl.accessToken = 'pk.eyJ1IjoiZ3Fyb290IiwiYSI6ImNqZGx6OGh1cjBmcjMzMm85MGw0Y3hkaXkifQ.aUDBTOBjCfRtDhKGWfGNcQ';
+                                    var map = new mapboxgl.Map({
+                                        container: 'map',
+                                        style: 'mapbox://styles/mapbox/streets-v9',
+                                        center: [-79.1996278, -3.9914916],
+
+                                        zoom: 13.7
+                                    });
+                                    var nav = new mapboxgl.NavigationControl();
+                                    map.addControl(nav, 'top-right');
+                                    map.addControl(new mapboxgl.FullscreenControl());
+                                    map.on('mousemove', function (e) {
+                                    document.getElementById('info').innerHTML =
+                                     JSON.stringify(e.point) + '<br />' +
+                                     // e.lngLat is the longitude, latitude geographical position of the event
+                                     JSON.stringify(e.lngLat);
+                                    });
+                                // Add geolocate control 5o the map.
+                                /*map.on('click', function(e){
+                                var coord =e.lngLat;
+                                var long=coord.lng.toFixed(6);
+                                var lati=coord.lat.toFixed(6);
+                                document.getElementById("latitud").setAttribute("value",lati);
+                                document.getElementById("longitud").setAttribute("value",long);
+                              
+
+                                });
+                               */
+                            
+                            </script>
                             <div class="input-group"> 
                                 <label for="latit">Latitud</label>
                                 <input type="text" class="form-control" id="Latitud" name="Latitud"  aria-describedby="sizing-addon2" value="<?php echo $con['latitud']; ?> " >
