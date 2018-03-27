@@ -135,6 +135,15 @@ header("Access-Control-Allow-Origin: *");
           mostrar(a);
         }, false);
 
+/*
+        map.on('click', function(e){
+          var coord =e.lngLat;
+          var long=coord.lng.toFixed(6);
+          var lati=coord.lat.toFixed(6);
+          <?php #$variLong = 'document.write(long)'; ?>
+          <?php #$variLat = 'document.write(lati)'; ?>
+        })
+*/
 
         map.on('load', function () {
             creaMapa();
