@@ -23,9 +23,6 @@
         <li class="page-scroll">
           <a href="index.php#nosotros">Nosotros</a>
         </li>
-        <li class="page-scroll">
-          <a href="index.php#contacto">Contacto</a>
-        </li>
       </ul>
     </div>
   </div>
